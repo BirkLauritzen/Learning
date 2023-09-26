@@ -114,4 +114,4 @@ Write code that prints the words that have more than 5 letters.
 
 const words = ['apple', 'banana', 'cherry', 'date', 'fig'];
 if (words.length > 5) {
-    console.log(words);
+    console.log(words);}
