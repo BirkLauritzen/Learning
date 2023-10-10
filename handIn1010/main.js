@@ -98,4 +98,32 @@ console.log(sentimentScoreObject);
   negativeWords: [],
 }
 *!/*/
+/*
+const positiveWords = ['happy', 'awesome', 'super', 'great', 'good', 'amazing', 'fantastic', 'excellent'];
+const negativeWords = ['hate', 'boring', 'bad', 'terrible', 'awful', 'horrible', 'disgusting'];
 
+function getSentimentScore(sentence) {
+    const words = sentence.toLowerCase().split(' ');
+
+    let score = 0;
+    let positiveWordsFound = [];
+    let negativeWordsFound = [];
+
+    for (let word of words) {
+        if (positiveWords.includes(word)) {
+            score++;
+            positiveWordsFound.push(word);
+        } else if (negativeWords.includes(word)) {
+            score--;
+            negativeWordsFound.push(word);
+        }
+    }
+    return {
+        score: score,
+        positiveWords: positiveWordsFound,
+        negativeWords: negativeWordsFound
+    };
+}
+
+const sentimentScoreObject = getSentimentScore('I hate being so bad and boring');
+console.log(sentimentScoreObject);*/
