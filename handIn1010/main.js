@@ -127,3 +127,4 @@ function getSentimentScore(sentence) {
 
 const sentimentScoreObject = getSentimentScore('I hate being so bad and boring');
 console.log(sentimentScoreObject);*/
+
