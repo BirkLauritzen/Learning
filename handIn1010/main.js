@@ -46,24 +46,56 @@ rollTheDice(5);
 // Here the user rolls 5 times but does not hit 6 even once
 rollTheDice(5);*/
 
-function getRandomInt(min, max) {
+/*
+function getRandomNumber(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+const diceRolling = parseInt(("How many times do you roll the dice?"))
+function rollTheDice(numberOfRolls) {
+    let sixCount = 0;
+    for (let i = 0; i < numberOfRolls; i++) {
+        let roll = getRandomNumber(1, 6);
+        announceRoll(roll);
+        if (roll === 6) {
+            sixCount++;
+        }
+    }
+    jackpot(sixCount, numberOfRolls);
+};
+
+function announceRoll(diceRolled) {
+    if (diceRolled === 6) {
+        console.log("You just hit a 6!")
+    }
+    else {
+        console.log("Try again!")
+    }
+};
+
+function jackpot(sixCount, numberOfRolls) {
+    if (sixCount === numberOfRolls) {
+        console.log("Jackpot")
+    }
 }
 
-const diceRolling = prompt("How many times do you roll the dice?")
-function rollTheDice(numberOfEyes) {
-    for (let i = 0; i < diceRolling; i++) {
-        console.log(getRandomInt(1,6))
-    }
-    if (rollTheDice() == 6)
-        console.log("You just hit 6!")
-    }
-    else
-    {
-    console.log("Better luck next time")
-    }
-}
+rollTheDice(diceRolling);*/
 
-rollTheDice()
+// Exercise 3 - Build a sentiment analyzer
+/*
+A sentiment analyzer is some functionality that figures out how positive/negative a sentence is.
+    Fx the sentence "I am mega super awesome happy" Should have a high score The sentence "I hate doing boring stuff" should have a low score.
+    Create a function that takes a string as a parameter. Calling the function will return an object with score, positiveWords and negativeWords. You decide how the score should be implemented and what words are negative and positive.
+    Here is an example of using the function:
+const sentimentScoreObject = getSentimentScore('I am mega super awesome happy');
+
+console.log(sentimentScoreObject);
+/!*
+{
+  score: 3,
+  positiveWords: ['happy', 'awesome', 'super'],
+  negativeWords: [],
+}
+*!/*/
+
