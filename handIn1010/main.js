@@ -7,7 +7,7 @@
 /*const clothesToWear = youCreateThisFunctionName(18);
 console.log(clothesToWear); // Logs out: "shorts and a t-shirt"*/
 
-/*
+
 function whatToWear(temperature) {
     if (temperature < 10) {
         console.log("Wear clothes + jacket");
@@ -46,7 +46,7 @@ rollTheDice(5);
 // Here the user rolls 5 times but does not hit 6 even once
 rollTheDice(5);*/
 
-/*
+
 function getRandomNumber(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -98,7 +98,7 @@ console.log(sentimentScoreObject);
   negativeWords: [],
 }
 *!/*/
-/*
+
 const positiveWords = ['happy', 'awesome', 'super', 'great', 'good', 'amazing', 'fantastic', 'excellent'];
 const negativeWords = ['hate', 'boring', 'bad', 'terrible', 'awful', 'horrible', 'disgusting'];
 
