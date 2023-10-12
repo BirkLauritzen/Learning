@@ -1,6 +1,6 @@
 // Exercise 1
 
-/*
+
 const kitten = {
     "fur colour": "orange",
     age: 23,
@@ -16,13 +16,13 @@ const phone = {
     "hasStylus": true,
     "megapixels": 12,
     "batteryLife": "24 hours",
-};*/
+};
 
 // Exercise 2
 
 //Create an object that describes you. Fx a key called age with the value of 28. Add a key that holds an array. Add minimum 6 keys
 
-/*
+
 const me = {
     "name": "Birk",
     "age": 23,
@@ -30,11 +30,11 @@ const me = {
     "shoeSize": 42.5,
     "heirColor": "dirtyBlond",
     "favorite": "cat",
-}*/
+}
 
 // Exercise 3
 
-/*
+
 // console.log the values of each property of "kitten"
 let kitten = {
     ageMonths: 3,
@@ -42,11 +42,11 @@ let kitten = {
     furColour: "brown",
 };
 
-console.log(kitten)*/
+console.log(kitten)
 
 // Exercise 4
 
-/*
+
 const dog = {
     name: "Billy",
     wantsToPlay: false,
@@ -70,7 +70,7 @@ console.log(dog.wantsToPlay);
 // The name of the craft of the last person in the array
 // The lastname of the first astronaut in the ISS
 
-/*
+
 const astronautsInSpace = {
     people: [
         {
@@ -132,10 +132,10 @@ const astronautName = astronautsInSpace.people;
 const astronautNameElement = astronautName[0]
 const lastName = astronautNameElement.name;
 const splitLastName = lastName.split(' ')
-console.log(splitLastName[1])*/
+console.log(splitLastName[1])
 
 // Exercise 6
-/*function getTotalPrice(cart) {
+function getTotalPrice(cart) {
     let totalPrice = 0;
     for(let item in cart) {
         const itemHasPriceAndQuantity = item.price !== undefined && item.quantity !== undefined
@@ -152,10 +152,10 @@ console.log(splitLastName[1])*/
     {name: 'cherry', price: 3, quantity: 1}
 ];
 
-console.log(getTotalPrice(cart));*/
+console.log(getTotalPrice(cart));
 
 // Exercise 7
-/*let currentStatus = undefined
+let currentStatus = undefined
 function checkPassword(user_data) {
     let user = user_data['user'];
     let password = user_data['password'];
@@ -168,5 +168,5 @@ function checkPassword(user_data) {
     alert('Status: ' + currentStatus);
 }
 
-checkPassword({user: "test", password: "123456789"});*/
+checkPassword({user: "test", password: "123456789"});
 
