@@ -1,5 +1,5 @@
 // Making the whole page load before running the script
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
     // Defining variables
     let clicks = 0;
     let autoClickers = 0;
@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let bakeryPrice = 1000;
     let bakeryInterval;
 
-    // Defining elements
+    // Defining DOM elements
     const counterElement = document.getElementById('counter');
     const autoClickerCountElement = document.getElementById('autoClickerCount');
     const multiplierCountElement = document.getElementById('multiplierCount');
     const bakeryCountElement = document.getElementById('bakeryCount');
     const cookieElement = document.getElementById('cookie');
 
-    // Increment function that makes the counter go up
+    // Function to increment the counter either manually or automatically based on the presence of auto-clickers,
     function increment(manual = false) {
         if (manual) {
             clicks += multiplier;
@@ -59,14 +59,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (clicks >= bakeryPrice) {
             clicks -= bakeryPrice;
             bakeries += 1;
-            bakeryPrice = Math.ceil(bakeryPrice * 1.15);
+            bakeryPrice = Math.ceil(bakeryPrice * 1.25);
             bakeryCountElement.innerHTML = `Bakeries: ${bakeries}`;
             document.getElementById('buyBakery').innerText = `Buy Bakery (${bakeryPrice} cookies)`;
-            if (bakeries === 1) {
+            counterElement.innerHTML = clicks;
+            if (bakeries === 1) {  // if this is the first bakery, start the bakery production interval
                 bakeryInterval = setInterval(bakeryProduction, 5000);
             }
-            counterElement.innerHTML = clicks;
         }
+    }
+
+    // Function that increments the cookies by bakeries * 10 * multiplier every 5 seconds
+    function bakeryProduction() {
+        clicks += bakeries * 10 * multiplier;
+        counterElement.innerHTML = clicks;
     }
 
     // Event listeners
