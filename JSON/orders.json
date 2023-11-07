@@ -1,0 +1,43 @@
+[
+    {
+      "orderName": "Durum",
+      "orderId": 1,
+      "price": 50,
+      "listOfDrinks": [
+        "cola",
+        "pepsi",
+        "faxe"
+      ]
+    },
+    {
+      "orderName": "Fries",
+      "orderId": 2,
+      "price": 35,
+      "listOfDrinks": [
+        "cola",
+        "pepsi",
+        "faxe"
+      ]
+    },
+    {
+      "orderName": "Pizza",
+      "orderId": 3,
+      "price": 70,
+      "listOfDrinks": [
+        "cola",
+        "pepsi",
+        "faxe"
+      ]
+    },
+    {
+      "orderName": "Pita",
+      "orderId": 4,
+      "price": 40,
+      "listOfDrinks": [
+        "cola",
+        "pepsi",
+        "faxe"
+      ]
+    },
+    {}
+  ]
