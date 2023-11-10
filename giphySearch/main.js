@@ -16,6 +16,7 @@ function gifsFetched(searchWord) {
         })
         .then(gifData => {
             if (gifData.data.length > 0) {
+                imageGif.setAttribute("height", "300px", "width", "300px");
                 const gifUrl = gifData.data[randomInteger].images.original.url; // Accessing the URL of the GIF
                 imageGif.src = gifUrl; // Setting the src attribute of the imageGif element
             } else {
