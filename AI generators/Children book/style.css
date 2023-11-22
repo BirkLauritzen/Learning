@@ -1,0 +1,11 @@
+.loading {
+    display: none;
+}
+
+span {
+    display: block;
+}
+
+img {
+    width: 100%;
+}
